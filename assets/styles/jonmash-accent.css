@@ -1,0 +1,17 @@
+/*
+  jonmash.com accent override.
+
+  PLACEHOLDER. MAS-5 (design-system/tokens.css, §3) reserves one accent triad per
+  property and explicitly leaves jonmash.com's and highzmash.com's hues undecided —
+  "not my call to pick those two now" (Mira). Until Mira specifies jonmash.com's own
+  accent, this file reuses mashengineer.com's verified blueprint-blue triad so the
+  contrast math in MAS-5 §2.2 stays valid (9.43:1 / 12.30:1 on paper-0) rather than
+  guessing an unverified color. Swap these three values, nothing else, when Mira
+  delivers the real one — every other token stays put.
+*/
+
+:root {
+  --color-accent-800: #1a3e9e;
+  --color-accent-900: #142f78;
+  --color-accent-050: #eaf0fe;
+}

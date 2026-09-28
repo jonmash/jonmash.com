@@ -1,0 +1,21 @@
+/*
+  jonmash.com — page-specific styles. Everything reusable across properties lives in
+  tokens.css / components.css; this file only holds the handful of rules specific to
+  this one-page layout.
+*/
+
+.prose {
+  max-width: var(--measure-body);
+  color: var(--color-ink-700);
+  line-height: var(--leading-body);
+  margin: 0 0 var(--space-4);
+}
+.prose:last-child { margin-bottom: 0; }
+
+.contact-meta address {
+  font-style: normal;
+}
+
+.contact-meta a.email-link {
+  font-weight: var(--weight-semibold);
+}
