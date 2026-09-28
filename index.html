@@ -48,7 +48,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://jonmash.com/#jon",
+    "@id": "https://jonmash.com/#person",
     "name": "Jon Mash",
     "alternateName": "Jonathan Mash",
     "givenName": "Jon",
@@ -92,14 +92,15 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Identity strip — MAS-10 §3.5, variant A (Jon's ratified choice: link freely) -->
+  <!-- Identity strip — MAS-10 §3.5, variant B (one-directional/freshness-gated).
+       highzmash.com omitted here to match mashengineer.com's identityStrip.js:
+       MAS-10 §3.4's freshness gate (4+ posts, one within 90 days) isn't met yet
+       (highzmash.com has 2 posts). Re-add for every site at once when it is. -->
   <div class="identity-strip">
     <nav class="container identity-strip__row" aria-label="Jon Mash&#39;s sites">
       <span aria-current="page">Jon Mash</span>
       <span class="identity-strip__sep" aria-hidden="true">&middot;</span>
       <a href="https://mashengineer.com/" rel="me">Consulting</a>
-      <span class="identity-strip__sep" aria-hidden="true">&middot;</span>
-      <a href="https://highzmash.com/" rel="me">Writing</a>
     </nav>
   </div>
 
