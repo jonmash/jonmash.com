@@ -71,5 +71,10 @@ are handled outside this repo — see MAS-11.
   can't be verified by tooling).
 - **`mashengineer.com` / `highzmash.com` in `sameAs`.** Also withheld until
   those sites actually link back here (MAS-12/MAS-6 — the reciprocal identity
-  strip hasn't shipped on either site yet). The visible identity strip on this
-  page already links out to both, per Jon's variant-A ("link freely") decision.
+  strip hasn't shipped on either site yet).
+- **Identity strip / `highzmash.com` link.** MAS-10 §3.5's ratified policy is
+  variant B (one-directional, freshness-gated per §3.4: 4+ posts, one within
+  90 days) — same rule `mashengineer.com`'s `identityStrip.js` applies.
+  `highzmash.com` currently has 2 posts, so the link to it is withheld here
+  too, consistent with the other property. Add it back (on all sites at once)
+  once the gate is met.
