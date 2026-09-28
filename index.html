@@ -291,7 +291,7 @@
             <div class="form-banner form-banner--error" id="contact-error" role="alert" hidden>
               <p>
                 Something went wrong sending that. Please try again, or email me directly at
-                <a href="mailto:me@jonmash.com">me@jonmash.com</a>.
+                <a href="mailto:jon@mashengineer.com">jon@mashengineer.com</a>.
               </p>
             </div>
             <div class="form-banner form-banner--success" id="contact-success" role="status" hidden>
@@ -308,7 +308,7 @@
               upgrades it to the inline success/error banners above.
             -->
             <form id="contact-form" method="POST" action="https://api.web3forms.com/submit">
-              <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY" />
+              <input type="hidden" name="access_key" value="a9c2252a-3838-4c21-92d3-a7bfb749cbff" />
               <input type="hidden" name="subject" value="[jonmash.com] New contact form message" />
               <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" />
 
@@ -324,6 +324,9 @@
                 <label for="message">Message *</label>
                 <textarea id="message" name="message" required></textarea>
               </div>
+              <div class="field field--captcha">
+                <div class="h-captcha" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2" data-theme="light"></div>
+              </div>
               <button type="submit" class="btn btn-primary">Send message</button>
             </form>
           </div>
@@ -331,7 +334,7 @@
           <div class="contact-meta">
             <p>
               Prefer email? Reach me directly at
-              <a class="email-link" href="mailto:me@jonmash.com">me@jonmash.com</a>.
+              <a class="email-link" href="mailto:jon@mashengineer.com">jon@mashengineer.com</a>.
             </p>
             <address>Seattle area, WA</address>
           </div>
@@ -344,13 +347,14 @@
     <div class="container site-footer__row">
       <span>&copy; 2026 Jon Mash</span>
       <span>
-        <a href="mailto:me@jonmash.com">me@jonmash.com</a>
+        <a href="mailto:jon@mashengineer.com">jon@mashengineer.com</a>
         &middot;
         <a href="https://github.com/jonmash" rel="me">GitHub</a>
       </span>
     </div>
   </footer>
 
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
   <script src="/assets/scripts/contact.js"></script>
 </body>
 </html>

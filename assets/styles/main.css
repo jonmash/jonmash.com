@@ -28,6 +28,10 @@
   display: none;
 }
 
+.field--captcha {
+  margin-top: var(--space-2);
+}
+
 .error-page {
   padding-block: var(--space-10);
 }
