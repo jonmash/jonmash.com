@@ -1,7 +1,7 @@
 /*
   jonmash.com — page-specific styles. Everything reusable across properties lives in
   tokens.css / components.css; this file only holds the handful of rules specific to
-  this one-page layout.
+  this site's pages (the one-page layout and the 404 page).
 */
 
 .prose {
@@ -18,4 +18,22 @@
 
 .contact-meta a.email-link {
   font-weight: var(--weight-semibold);
+}
+
+#areas-of-focus-heading { margin-top: var(--space-7); }
+#publications-heading { margin-top: var(--space-8); }
+#contact-send-another { margin-top: var(--space-4); }
+
+.botcheck {
+  display: none;
+}
+
+.error-page {
+  padding-block: var(--space-10);
+}
+.error-page h1 {
+  font-size: var(--text-h2);
+}
+.error-page p {
+  color: var(--color-ink-700);
 }
