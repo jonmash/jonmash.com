@@ -54,10 +54,14 @@ are handled outside this repo — see MAS-11.
 
 ## Open items (not blockers, but don't guess these — ask)
 
-- **Contact form access key.** `index.html`'s form has a placeholder
-  `REPLACE_WITH_WEB3FORMS_ACCESS_KEY` — Sol needs to provision (or share) a
-  Web3Forms access key for `me@jonmash.com` before submissions actually reach
-  an inbox. One-line change once that exists.
+- **Contact form allow-listing (MAS-21).** The form now uses the same
+  Web3Forms access key and hCaptcha sitekey as `mashengineer.com` and
+  `highzmash.com` (Sol's ratified handler pattern: identical across all
+  three properties, one address — `jon@mashengineer.com`, replacing the old
+  `me@jonmash.com`). Submissions won't reach an inbox until `jonmash.com` is
+  added to Web3Forms' domain allow-list — tracked in MAS-20 item 2, a
+  dashboard change for Jon routed through the CTO. Don't flip DNS/go live on
+  this contact path before that lands.
 - **Accent color.** MAS-5 explicitly left jonmash.com's accent hue undecided
   (Mira's call). `jonmash-accent.css` reuses the firm's blue as a verified,
   contrast-safe placeholder — swap the three values there when Mira specifies
