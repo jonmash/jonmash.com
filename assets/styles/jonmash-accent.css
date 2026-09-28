@@ -1,17 +1,33 @@
 /*
   jonmash.com accent override.
 
-  PLACEHOLDER. MAS-5 (design-system/tokens.css, §3) reserves one accent triad per
-  property and explicitly leaves jonmash.com's and highzmash.com's hues undecided —
-  "not my call to pick those two now" (Mira). Until Mira specifies jonmash.com's own
-  accent, this file reuses mashengineer.com's verified blueprint-blue triad so the
-  contrast math in MAS-5 §2.2 stays valid (9.43:1 / 12.30:1 on paper-0) rather than
-  guessing an unverified color. Swap these three values, nothing else, when Mira
-  delivers the real one — every other token stays put.
+  Real hue, replacing the mashengineer.com placeholder (MAS-15). MAS-5 (design-system/
+  tokens.css, §3) reserves one accent triad per property, same neutrals/type/spacing
+  family, different room per property (mashengineer.com = blueprint blue). This is
+  jonmash.com's room: a deep teal. Distinct enough from the firm's blue that the two
+  sites don't read as the same property at a glance, but the same register — dark,
+  desaturated-enough-to-stay-quiet, no personal-site-brights. Reads as "individual
+  engineer," not "corporate."
+
+  Contrast (WCAG 2.2, measured against design-system/tokens.css neutrals):
+    --color-accent-800 (#0a5a5a) on --color-paper-0  (#ffffff): 8.01:1
+    --color-accent-800 (#0a5a5a) on --color-paper-50 (#f3f5f8): 7.33:1
+    --color-accent-800 as focus ring vs --color-hairline-200:   5.81:1
+    --color-accent-900 (#073e3e) on --color-paper-0  (#ffffff): 11.88:1
+    --color-accent-900 (#073e3e) on --color-paper-50 (#f3f5f8): 10.88:1
+  All exceed the 4.5:1 (text) / 3:1 (UI component, focus ring) AA minimums with room
+  to spare — same margin mashengineer.com's blue carries (9.43:1 / 12.30:1).
+
+  --color-accent-050 is a light wash of the same hue for tag/pill/selected backgrounds;
+  it's decorative, not text-bearing, so it carries no contrast requirement of its own —
+  ink-900 text on it measures 16.43:1, well clear either way.
+
+  highzmash.com's triad is still undecided; do the same exercise there when that
+  property is scoped.
 */
 
 :root {
-  --color-accent-800: #1a3e9e;
-  --color-accent-900: #142f78;
-  --color-accent-050: #eaf0fe;
+  --color-accent-800: #0a5a5a;
+  --color-accent-900: #073e3e;
+  --color-accent-050: #eaf6f6;
 }
