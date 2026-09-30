@@ -1,14 +1,15 @@
 /*
+  Vendored from jonmash/mash-design-tokens @ a7a04452 — do not edit here,
+  edit source and re-copy. Override --color-accent-800/900/050 in
+  jonmash-accent.css instead of editing them here. See
+  mash-engineering-website/docs/ARCHITECTURE-DECISION-tokens.md.
+*/
+
+/*
   Mash Engineering — Design Tokens (MAS-5)
   Shared family across mashengineer.com (firm), jonmash.com (person), highzmash.com (lab).
   One token set; each property overrides only --color-accent-800/900/050 to its own hue.
   This file is the source of truth. Do not inline a value that exists here.
-
-  Copied verbatim from jonmash/mash-engineering-website@design/tokens-and-page-system
-  (design-system/tokens.css) on 2026-09-28. MAS-12 will replace this copy with a real
-  shared package dependency, consumed identically by all three repos — until then this
-  file must be updated by hand whenever the source changes. Do not edit values here;
-  override the three --color-accent-* tokens in jonmash-accent.css instead.
 */
 
 :root {
@@ -23,12 +24,17 @@
   --color-ink-500: #5b6472;       /* tertiary text, meta, placeholders — 5.98:1 on paper-0 */
   --color-ink-400: #8b93a0;       /* disabled text ONLY — exempt from contrast (WCAG 1.4.3) */
 
+  /* ---- Color: accent — mashengineer.com hue (blueprint blue) ---- */
+  --color-accent-800: #1a3e9e;    /* links, primary CTA fill, focus ring — 9.43:1 on paper-0 */
+  --color-accent-900: #142f78;    /* hover/active/pressed — 12.30:1 on paper-0 */
+  --color-accent-050: #eaf0fe;    /* tag/pill background, selected background */
+
   /* ---- Color: semantic ---- */
   --color-danger-800: #9a2a22;    /* error text/icon/border — 7.70:1 on paper-0 */
   --color-danger-050: #fbeae8;    /* error background tint */
   --color-success-800: #1e6b3d;   /* success text/icon — 6.51:1 on paper-0 */
 
-  --color-focus-ring: var(--color-accent-800); /* set alongside accent tokens — see jonmash-accent.css */
+  --color-focus-ring: var(--color-accent-800); /* 9.43:1 on paper-0 — verified below */
 
   /* ---- Type ---- */
   --font-family-base:
